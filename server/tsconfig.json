@@ -1,15 +1,16 @@
 {
   "compilerOptions": {
     "target": "ES2020",
-    "module": "ESNext",                 
+    "module": "ESNext",
     "moduleResolution": "Node",
+    "outDir": "./dist",
     "esModuleInterop": true, 
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,  
     "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,                          
-    "noEmit": true
+    "resolveJsonModule": true,
+    "noEmit": false
   },
   "include": [
     "main.ts",
