@@ -7,8 +7,8 @@ import { Request, Response, NextFunction } from "express";
 import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
-import eventsRouter from './routes/event.ts';
-import sportsRouter from './routes/sports.ts';
+import eventsRouter from './routes/event';
+import sportsRouter from './routes/sports';
 import { matchedData, validationResult, query } from "express-validator";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -73,7 +73,7 @@ app.get("/hello", [query("person").optional().notEmpty()], (req: Request, res: R
 
 app.get('/live', async (req, res) => {
   try {
-    const { fetchLiveFixtures } = await import('./services/liveFixtures.ts');
+    const { fetchLiveFixtures } = await import('./services/liveFixtures');
     const liveFixtures = await fetchLiveFixtures();
     res.status(200).json(liveFixtures);
   } catch (error) {
