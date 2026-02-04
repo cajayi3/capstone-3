@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch main.ts",
-    "start": "tsx main.ts",
+    "start": "npm run build && node dist/main.js",
     "build": "tsc",
     "lint": "eslint .",
     "db:generate": "drizzle-kit generate",
