@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { db } from "../config/db.ts";
-import { events } from "../db/schema.ts";
+import { db } from "../config/db";
+import { events } from "../db/schema";
 import { InferModel, eq } from "drizzle-orm";
 
 export type Event = InferModel<typeof events>;
