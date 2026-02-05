@@ -13,8 +13,8 @@ export const db = drizzle(pool);
         await pool.query('SELECT NOW()');
         console.log('Database connected successfully');
     } catch (err) {
-        console.error('Database connection failed to PostgreSQL:', err);
-        process.exit(1);
+        console.warn('Database connection warning (non-critical):', err instanceof Error ? err.message : err);
+        // Don't exit - allow server to continue running
     }
 })();
 

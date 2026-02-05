@@ -1,5 +1,5 @@
-import { db } from "../config/db.ts";
-import { events } from "../db/schema.ts";
+import { db } from "../config/db";
+import { events } from "../db/schema";
 import { eq } from "drizzle-orm";
 // const getAllevents = async (): Promise<Event[]> => {
 //     return await db.select().from(events);

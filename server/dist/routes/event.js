@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { db } from "../config/db";
-import { events } from '../db/schema';
+import { db } from "../config/db.js";
+import { events } from '../db/schema.js';
 import { eq } from 'drizzle-orm';
 export const eventsRouter = Router();
 eventsRouter.get('/', async (req, res) => {
