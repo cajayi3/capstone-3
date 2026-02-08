@@ -4,7 +4,7 @@
   "description": "A Vite + Typescript client application",
   "main": "main.tsx",
   "scripts": {
-    "start": "vite",
+    "start": "vite preview --host 0.0.0.0 --port 10000",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
