@@ -13,8 +13,8 @@ import dirtbike from '../assets/images/dirtbike.jpg';
 import snowboard from '../assets/images/snowboard.jpg';
 import skii from '../assets/images/skii.jpg';
 import swim from '../assets/images/swim.jpg';
-import track from '../assets/images/Track.jpg';
-import surf from '../assets/images/Surf.jpg';
+import track from '../assets/images/track.jpg';
+import surf from '../assets/images/surf.jpg';
 
 const Slideshow = () => {
 
