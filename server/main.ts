@@ -73,7 +73,7 @@ app.get("/hello", [query("person").optional().notEmpty()], (req: Request, res: R
 
 app.get('/live', async (req, res) => {
   try {
-    const { fetchLiveFixtures } = await import('./services/liveFixtures');
+    const { fetchLiveFixtures } = await import('./services/liveFixtures.js');
     const liveFixtures = await fetchLiveFixtures();
     res.status(200).json(liveFixtures);
   } catch (error) {
